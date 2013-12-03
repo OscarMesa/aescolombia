@@ -57,3 +57,5 @@ div.itemContainer{float:left}
 #footer{text-align:center;margin-top:10px}
 #menu_inferior ul{margin:5px 0;text-align:right}#menu_inferior ul li{display:inline-block}#menu_inferior ul li a{color:#fff;border-radius:5px;padding:5px 10px}#menu_inferior ul li a:hover{background:#40b032}
 #k2Container{padding-top:10px}
+#moviendo {display: inline-block;margin-right: 30%; }
+#menu_inferior_interno{display: inline-flex;"}

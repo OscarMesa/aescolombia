@@ -222,7 +222,9 @@ if ($menu->getActive() == $menu->getDefault()) {
 		<div id="menu_inferior">
 			<div class="grid-container">
 				<div  class="grid-100">
-					<jdoc:include type="modules" name="menu_inferior" style="xhtml" />
+				<p id="moviendo">Moviendo a todo un país</p>
+				<div id="menu_inferior_interno">	<jdoc:include type="modules" name="menu_inferior" style="xhtml" />
+				</div>
 				</div>
 			</div>
 		</div>

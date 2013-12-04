@@ -46,7 +46,7 @@
 #menu_top{
   ul{
     margin-left: 0px;
-    li{
+    li{ 
       display:inline-block;
       margin-right: 10px;
       font-size: 18px;
@@ -152,10 +152,7 @@ padding: 0px;
 
 }
 
-#mod-search-searchword {
-width: 100px;
 
-}
 #buscador {
 padding-top: 5px;
 }
@@ -253,6 +250,7 @@ margin-bottom:@distanciaBotonLeerTodas;
   padding: 10px;
   .wk-twitter.wk-twitter-list {
     background: white;
+    padding-bottom: 34%;
   }
    h3 {
     background:url("../img/iconotitulos.png") left top #F0F0F0 no-repeat;
@@ -263,8 +261,11 @@ margin-bottom:@distanciaBotonLeerTodas;
 }
 #clientes {
 
-  background: white;
+  background-color:#ececec;
   padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000000;
+
 
   h3{
       background:url("../img/iconotitulos.png") left top #F0F0F0 no-repeat;
@@ -314,12 +315,21 @@ margin: 10px;
   background:white;
   height:132px;
   margin-top: 10px;
-  border: 1px solid black;
+  width: 49%;
+  margin-bottom: 2%;
+ /* border: 1px solid black;*/
+}
+#banner1Home{
+  margin-right: 1%
+}
+#banner2Home{
+  margin-left: 1%
 }
 #bannerBottomHome{
-  border: 1px solid black;
+  background:white;
   margin-top: 10px;
-    height:264px;
+  height:264px;
+  margin-bottom: 2%;
 }
 
 
@@ -350,6 +360,7 @@ background: #F7F7F7;
   .catItemTitle {
   text-align: center;
   font-size: 1em;
+  height: 46px;
   }
   h2 {
     color: #24326F;
@@ -426,4 +437,56 @@ margin-top: 10px;
 }
 #k2Container {
 padding-top: 10px;
+}
+#moviendo {
+    display: inline-block;
+    margin-right: 30%;
+}
+#menu_inferior_interno {
+    display: inline-flex;
+}
+#mod-search-searchword {
+  width: 133px !important;
+  background-position: left center; 
+  padding-left: 17px; width:183px;    
+
+  background: url("../images/search.png") no-repeat scroll 8px 6px rgba(0, 0, 0, 0);
+  margin: 3px;
+  padding: 6px 15px 6px 30px;
+
+  -webkit-border-radius: 2px 14px 0 11px;
+  -moz-border-radius: 2px 14px 0 11px;
+  border-radius: 2px 14px 0 11px;
+}
+#menu_top ul{
+  margin-left:-100px !important;
+}
+.grid-80{
+  width: 75%;
+}
+.hr-secciones_home{
+  background-color: #FFFFFF; 
+  height: 3px;
+}
+.first{
+  margin-top: 101px;
+  margin-bottom: 9px;
+}
+.second{
+  margin-top: -9px;
+}
+
+
+.dl-horizontal dd {
+    margin-left: 43px;
+}
+.contact-form, .contact-miscinfo{
+  display: inline-flex !important;
+}
+.contact-form + h3{
+  display: none;
+}
+.jicons-icons img{
+  display: none !important;
+}
 }

@@ -187,7 +187,7 @@ jimport('joomla.html.html.bootstrap');
 
 		<div class="contact-miscinfo">
 			<dl class="dl-horizontal">
-				<dt>
+				<dt style="display:none">
 					<span class="<?php echo $this->params->get('marker_class'); ?>">
 					<?php echo $this->params->get('marker_misc'); ?>
 					</span>

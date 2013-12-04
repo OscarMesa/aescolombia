@@ -12,9 +12,11 @@ defined('_JEXEC') or die;
 /**
  * marker_class: Class based on the selection of text, none, or icons
  * jicon-text, jicon-none, jicon-icon
+ * 
  */
-?>
+?>	
 <dl class="contact-address dl-horizontal">
+	<div id="titles-contact">
 	<?php if (($this->params->get('address_check') > 0) &&
 		($this->contact->address || $this->contact->suburb  || $this->contact->state || $this->contact->country || $this->contact->postcode)) : ?>
 		<?php if ($this->params->get('address_check') > 0) : ?>
@@ -32,7 +34,6 @@ defined('_JEXEC') or die;
 				</span>
 			</dd>
 		<?php endif; ?>
-
 		<?php if ($this->contact->suburb && $this->params->get('show_suburb')) : ?>
 			<dd>
 				<span class="contact-suburb">
@@ -46,14 +47,14 @@ defined('_JEXEC') or die;
 					<?php echo $this->contact->state . '<br/>'; ?>
 				</span>
 			</dd>
-		<?php endif; ?>
+		<?php endif; ?>		
 		<?php if ($this->contact->postcode && $this->params->get('show_postcode')) : ?>
 			<dd>
 				<span class="contact-postcode">
 					<?php echo $this->contact->postcode .'<br/>'; ?>
 				</span>
 			</dd>
-		<?php endif; ?>
+		<?php endif; ?>		
 		<?php if ($this->contact->country && $this->params->get('show_country')) : ?>
 		<dd>
 			<span class="contact-country">
@@ -62,7 +63,6 @@ defined('_JEXEC') or die;
 		</dd>
 		<?php endif; ?>
 	<?php endif; ?>
-
 <?php if ($this->contact->email_to && $this->params->get('show_email')) : ?>
 	<dt>
 		<span class="<?php echo $this->params->get('marker_class'); ?>" >
@@ -75,7 +75,6 @@ defined('_JEXEC') or die;
 		</span>
 	</dd>
 <?php endif; ?>
-
 <?php if ($this->contact->telephone && $this->params->get('show_telephone')) : ?>
 	<dt>
 		<span class="<?php echo $this->params->get('marker_class'); ?>" >
@@ -124,4 +123,5 @@ defined('_JEXEC') or die;
 		</span>
 	</dd>
 <?php endif; ?>
+</div>
 </dl>

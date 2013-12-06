@@ -115,16 +115,6 @@ if ($menu->getActive() == $menu->getDefault()) {
 	. ($itemid ? ' itemid-' . $itemid : '')
 	. ($params->get('fluidContainer') ? ' fluid' : '');
 ?>">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-44981772-1', 'escueladevida.com.co');
-  ga('send', 'pageview');
-
-</script>
 <?php
 $app = JFactory::getApplication();
 $menu = $app->getMenu();
@@ -165,7 +155,13 @@ if ($menu->getActive() == $menu->getDefault()) {
 			
 
 
-			<main id="contenido" role="main" class="grid-100 ">
+			<?php if (!$this->countModules('derecho')) { ?>
+				<main id="contenido" role="main" class="grid-100 ">
+			<?php
+			}else{ ?>
+				<main id="contenido" role="main" class="grid-80">
+			<?php
+			}?>
 				<!-- Begin Content -->
 					<jdoc:include type="modules" name="breadcrumbs" style="none" />
 					<jdoc:include type="message" />
@@ -174,6 +170,15 @@ if ($menu->getActive() == $menu->getDefault()) {
 				<!-- Footer -->
 
 			</main>
+			<?php
+				if ($this->countModules('derecho')) { 
+			?>
+				<div class="grid-20 modulo_derecho">
+					<jdoc:include type="modules" name="derecho" style="xhtml" />
+				</div>
+			<?php
+			} ?>
+
 			<?php if ($this->countModules('noticias')) : ?>
 			<div id="noticias" class="grid-90 push-5">
 				<jdoc:include type="modules" name="noticias" style="xhtml" />

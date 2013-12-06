@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Indicadores Económicos para Colombia</name>
+    <author>AppLab - Laboratorio de Ideas</author>
+    <authorEmail>soporte@bellagraph.com</authorEmail>
+    <authorUrl>http://www.applab.in/</authorUrl>
+    <version>1.1</version>
+    <creationDate>03/10/2013</creationDate>
+    <description>MOD_INDICADORES_DESCRIPCION</description>
+    <copyright>Released under GNU/GPL License</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+    
+    <files>
+		<filename module="mod_applab_indicadores">mod_applab_indicadores.php</filename>
+       	<filename>helper.php</filename>
+        <filename>index.html</filename>
+		<folder>language</folder>
+       	<folder>tmpl</folder>
+    </files>
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_applab_indicadores.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_applab_indicadores.sys.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_applab_indicadores.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_applab_indicadores.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="ancho" type="text" label="MOD_INDICADORES_LABELTANCHO" description="MOD_INDICADORES_DESCRIPANCHO" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+        					name="moduleclass_sfx"
+        					type="text"
+        					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+        					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

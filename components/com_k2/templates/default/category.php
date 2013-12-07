@@ -85,7 +85,6 @@ defined('_JEXEC') or die;
 			else
 				$lastContainer='';
 			?>
-
 			<div class="subCategoryContainer<?php echo $lastContainer; ?>"<?php echo (count($this->subCategories)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('subCatColumns'), 1).'%;"'; ?>>
 				<div class="subCategory">
 					<?php if($this->params->get('subCatImage') && $subCategory->image): ?>
@@ -147,7 +146,6 @@ defined('_JEXEC') or die;
 			else
 				$lastContainer='';
 			?>
-			
 			<div class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->leading)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_leading_columns'), 1).'%;"'; ?>>
 				<?php
 					// Load category_item.php by default
@@ -175,7 +173,6 @@ defined('_JEXEC') or die;
 			else
 				$lastContainer='';
 			?>
-			
 			<div class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->primary)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_primary_columns'), 1).'%;"'; ?>>
 				<?php
 					// Load category_item.php by default

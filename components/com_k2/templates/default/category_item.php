@@ -19,7 +19,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 <div class="catItemView group<?php echo ucfirst($this->item->itemGroup); ?><?php echo ($this->item->featured) ? ' catItemIsFeatured' : ''; ?><?php if($this->item->params->get('pageclass_sfx')) echo ' '.$this->item->params->get('pageclass_sfx'); ?>">
 
 	<!-- Plugins: BeforeDisplay -->
-	<?php echo $this->item->event->BeforeDisplay; ?>
+	<?php echo $this->item->event->BeforeDisplay;?>
 
 	<!-- K2 Plugins: K2BeforeDisplay -->
 	<?php echo $this->item->event->K2BeforeDisplay; ?>

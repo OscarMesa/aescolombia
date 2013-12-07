@@ -13,7 +13,6 @@ defined('_JEXEC') or die;
 ?>
 
 <!-- Start K2 Category Layout -->
-oscar mesa
 <div id="k2Container" class="itemListView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?> servicios">
 
 	<?php if($this->params->get('show_page_title')): ?>

@@ -16,6 +16,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 ?>
 
 <!-- Start K2 Item Layout -->
+oscar mesa
 <div class="catItemView group<?php echo ucfirst($this->item->itemGroup); ?><?php echo ($this->item->featured) ? ' catItemIsFeatured' : ''; ?><?php if($this->item->params->get('pageclass_sfx')) echo ' '.$this->item->params->get('pageclass_sfx'); ?>">
 
 	<!-- Plugins: BeforeDisplay -->

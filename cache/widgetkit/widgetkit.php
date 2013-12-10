@@ -1,1 +1,1 @@
-{"update_check":"f295d0efbe1901b648097b007778ae2c","update_data":"{\"status\":\"up-to-date\",\"message\":\"You're up to date!. 1.4.7 is currently the newest version available.\"}"}
+{"update_check":"7a094e6d9784160120f5e3483e3786c0","update_data":"{\"status\":\"up-to-date\",\"message\":\"You're up to date!. 1.4.7 is currently the newest version available.\"}"}

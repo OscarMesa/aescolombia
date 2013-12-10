@@ -1,3 +1,4 @@
 .gitignore
 .htaccess
 configuration.php
+cache/widgetkit/twitter/

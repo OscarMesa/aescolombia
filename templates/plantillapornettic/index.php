@@ -213,12 +213,13 @@ if ($menu->getActive() == $menu->getDefault()) {
 						</div>
 						<?php endif; ?>
 						<div class="grid-50" id="banner1Home">
-
+							<img src="<?php echo $doc->base;?>images/obligaciones.jpg"/>
 						</div>
 						<div class="grid-50" id="banner2Home">
+							<img src="<?php echo $doc->base;?>images/precios.jpg"/>
 						</div>
 						<div class="grid-100" id="bannerBottomHome">
-
+							<img src="<?php echo $doc->base;?>/images/afiliate.jpg"/>
 						</div>
 					</div>
 				</div>

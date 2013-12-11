@@ -201,5 +201,5 @@ defined('_JEXEC') or die;
 		<div class="clr"></div>
 	</div>
 	<?php endif; ?>
-	<a href="#" class="ver_todas" /> Ver todas las noticias</a>
+	<a href="/aescolombia/noticias" class="ver_todas" /> Ver todas las noticias</a>
 </div>

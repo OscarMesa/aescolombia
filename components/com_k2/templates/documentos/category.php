@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
 
 <!-- Start K2 Category Layout -->
 
-<div id="k2Container" class="contenedorK2Superior itemListView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?>">
+<div id="k2Container" class="documentos contenedorK2Superior itemListView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?>">
 
 	<?php if($this->params->get('show_page_title')): ?>
 	<!-- Page title -->
